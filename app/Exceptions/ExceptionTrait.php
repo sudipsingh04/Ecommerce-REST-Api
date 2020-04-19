@@ -21,7 +21,7 @@ trait ExceptionTrait
             ], Response::HTTP_NOT_FOUND);
         }
 
-        return parent::render($request, $exception);
+        return parent::render($request, $e);
     }
 
     public function isModel($e)
